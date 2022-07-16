@@ -1,0 +1,16 @@
+FETCHING DATA:
+
+EAGER;LAZY
+
+TH1: One-To-One(EAGER)
+-Lấy tất cả những bản ghi liên quan đến nhau ở cả 2 bảng
+-T/h này sẽ bị nested exception(dữ liệu lồng nhau)
+-Sử dụng DTO để giải quyết t/h này
+
+TH2: One-To-Many(Lazy)
+-Chỉ lấy thông tin ở bảng kia khi cần thiết
+TH3: ManyToMany(lazy)
+-Chỉ lấy thông tin ở bảng kia khi cần thiết
+
+Model mapper
+

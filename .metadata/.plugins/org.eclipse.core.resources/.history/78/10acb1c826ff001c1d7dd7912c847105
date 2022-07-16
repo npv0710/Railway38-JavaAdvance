@@ -1,0 +1,52 @@
+package com.vti.dto;
+
+import java.util.Date;
+import java.util.List;
+
+import javax.persistence.Convert;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.vti.converter.DepartmentConverter;
+
+import lombok.Data;
+import lombok.NonNull;
+
+@Data
+public class DepartmentDTO {
+	@NonNull
+	private int id;
+	
+	@NonNull
+	private String name;
+	
+	@NonNull
+	private int totalMember;
+	
+	@NonNull
+	private String type;
+	
+	@NonNull
+	@JsonFormat(pattern = "dd-MM-yyy HH:mm:ss")
+	private Date createdAt;
+	
+	private List<AcDTO> accounts;
+	
+	@Data
+	public static class AcDTO {
+		private int id;
+		
+		private String username;
+		
+		private String firstName;
+		
+		private String lastName;
+		
+		private String email;
+		
+		private String role;
+		
+		private String status;
+
+	}
+	
+}

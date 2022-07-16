@@ -1,0 +1,25 @@
+package com.vti.repository;
+
+import java.util.List;
+
+import com.vti.entity.Department;
+import com.vti.utils.HibernateUtils;
+
+public class DepartmentRepository implements IDepartmentRepository{
+	
+	private HibernateUtils hibernateUtil;
+	
+	public DepartmentRepository() {
+		hibernateUtil = HibernateUtils.getInstance();
+	}
+	
+	@Override
+	public List<Department> getListDepartments() {
+		return null;
+	}
+	
+	@Override
+	public void createDepartment(Department dp) {
+	}
+
+}

@@ -1,0 +1,32 @@
+package com.vti.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.vti.entity.Account;
+import com.vti.utils.HibernateUtils;
+
+public class AccountRepository implements IAccountRepository{
+	private HibernateUtils hibernateUtil;
+	
+	public AccountRepository() {
+		hibernateUtil = HibernateUtils.getInstance();
+	}
+	
+	@Override
+	public List<Account> getListAccount() {
+		return null;
+	}
+	
+	@Override
+	public Optional<Account> findAccountById(int id) {
+		return null;
+	}
+
+	@Override
+	public void updateAccount(Account account) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

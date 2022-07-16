@@ -1,0 +1,20 @@
+package com.vti.repository;
+
+import java.util.List;
+
+import com.vti.entity.Department;
+
+public class DepartmentRepository implements IDepartmentRepository{
+
+	@Override
+	public List<Department> getListDepartments() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public Department createDepartment(Department dp) {
+		return null;
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.vti.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.vti.entity.Account;
+
+public class AccountRepository implements IAccountRepository{
+
+	@Override
+	public List<Account> getListAccount() {
+		return null;
+	}
+
+	public Optional<Account> findAccountById(int id) {
+		return null;
+	}
+
+}

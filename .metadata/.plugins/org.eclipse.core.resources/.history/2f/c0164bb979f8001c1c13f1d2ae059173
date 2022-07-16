@@ -1,0 +1,27 @@
+package com.vti.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.vti.entity.Address;
+import com.vti.service.AddressService;
+import com.vti.service.IAddressService;
+
+@RestController
+@RequestMapping(value = "api/addresses")
+public class AddressController {
+	private IAddressService addressService;
+	
+	public AddressController() {
+		addressService = new AddressService();
+	}
+	
+	@GetMapping
+	public List<Address> getListAddresses() {
+		return addressService.getListAddresses();
+	}
+	
+}
